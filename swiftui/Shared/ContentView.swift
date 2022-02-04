@@ -18,8 +18,8 @@ struct ContentView: View {
     private var speedTurn: CGSize {
         get {
             var data = offset
-            data.width = -1 * 1024 * offset.height / 100
-            data.height = 1024 * offset.width / 100
+            data.width = -1 * 1024 * offset.width / 100
+            data.height = -1 * 1024 * offset.height / 100
             return data
         }
     }
@@ -30,7 +30,7 @@ struct ContentView: View {
         let dragGesture = DragGesture()
             .onChanged { value in
                 offset = value.translation
-                rover.ride = RoverStatus(speed: Int(speedTurn.width), turn: Int(speedTurn.height), distance: nil)
+                rover.ride = RoverStatus(speed: Int(speedTurn.height), turn: Int(speedTurn.width), distance: nil)
             }
             .onEnded { _ in
                 withAnimation {
