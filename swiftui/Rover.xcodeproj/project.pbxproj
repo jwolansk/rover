@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CAC6B6227ABFD4300739BAD /* RoverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC6B5227ABFD4100739BAD /* RoverApp.swift */; };
+		8CAC6B6327ABFD4300739BAD /* RoverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC6B5227ABFD4100739BAD /* RoverApp.swift */; };
+		8CAC6B6427ABFD4300739BAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC6B5327ABFD4100739BAD /* ContentView.swift */; };
+		8CAC6B6527ABFD4300739BAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC6B5327ABFD4100739BAD /* ContentView.swift */; };
+		8CAC6B6627ABFD4300739BAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CAC6B5427ABFD4300739BAD /* Assets.xcassets */; };
+		8CAC6B6727ABFD4300739BAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CAC6B5427ABFD4300739BAD /* Assets.xcassets */; };
+		8CAC6B7127AC2BEF00739BAD /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC6B7027AC2BEF00739BAD /* CircleImage.swift */; };
+		8CAC6B7227AC2BEF00739BAD /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC6B7027AC2BEF00739BAD /* CircleImage.swift */; };
+		8CAC6B7427AD38CB00739BAD /* RoverConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC6B7327AD38CB00739BAD /* RoverConnection.swift */; };
+		8CAC6B7527AD38CB00739BAD /* RoverConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC6B7327AD38CB00739BAD /* RoverConnection.swift */; };
+		8CAC6B7827AD39F500739BAD /* MQTTNIO in Frameworks */ = {isa = PBXBuildFile; productRef = 8CAC6B7727AD39F500739BAD /* MQTTNIO */; };
+		8CAC6B7B27AD5C4800739BAD /* MQTTNIO in Frameworks */ = {isa = PBXBuildFile; productRef = 8CAC6B7A27AD5C4800739BAD /* MQTTNIO */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8CAC6B5227ABFD4100739BAD /* RoverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverApp.swift; sourceTree = "<group>"; };
+		8CAC6B5327ABFD4100739BAD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8CAC6B5427ABFD4300739BAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CAC6B5927ABFD4300739BAD /* Rover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rover.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CAC6B5F27ABFD4300739BAD /* Rover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rover.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CAC6B6127ABFD4300739BAD /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		8CAC6B7027AC2BEF00739BAD /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		8CAC6B7327AD38CB00739BAD /* RoverConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverConnection.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CAC6B5627ABFD4300739BAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CAC6B7827AD39F500739BAD /* MQTTNIO in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CAC6B5C27ABFD4300739BAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CAC6B7B27AD5C4800739BAD /* MQTTNIO in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CAC6B4C27ABFD4100739BAD = {
+			isa = PBXGroup;
+			children = (
+				8CAC6B5127ABFD4100739BAD /* Shared */,
+				8CAC6B6027ABFD4300739BAD /* macOS */,
+				8CAC6B5A27ABFD4300739BAD /* Products */,
+				8CAC6B7927AD5C4800739BAD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8CAC6B5127ABFD4100739BAD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8CAC6B5227ABFD4100739BAD /* RoverApp.swift */,
+				8CAC6B5327ABFD4100739BAD /* ContentView.swift */,
+				8CAC6B5427ABFD4300739BAD /* Assets.xcassets */,
+				8CAC6B7027AC2BEF00739BAD /* CircleImage.swift */,
+				8CAC6B7327AD38CB00739BAD /* RoverConnection.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8CAC6B5A27ABFD4300739BAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CAC6B5927ABFD4300739BAD /* Rover.app */,
+				8CAC6B5F27ABFD4300739BAD /* Rover.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CAC6B6027ABFD4300739BAD /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				8CAC6B6127ABFD4300739BAD /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		8CAC6B7927AD5C4800739BAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CAC6B5827ABFD4300739BAD /* Rover (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CAC6B6A27ABFD4300739BAD /* Build configuration list for PBXNativeTarget "Rover (iOS)" */;
+			buildPhases = (
+				8CAC6B5527ABFD4300739BAD /* Sources */,
+				8CAC6B5627ABFD4300739BAD /* Frameworks */,
+				8CAC6B5727ABFD4300739BAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rover (iOS)";
+			packageProductDependencies = (
+				8CAC6B7727AD39F500739BAD /* MQTTNIO */,
+			);
+			productName = "Rover (iOS)";
+			productReference = 8CAC6B5927ABFD4300739BAD /* Rover.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CAC6B5E27ABFD4300739BAD /* Rover (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CAC6B6D27ABFD4300739BAD /* Build configuration list for PBXNativeTarget "Rover (macOS)" */;
+			buildPhases = (
+				8CAC6B5B27ABFD4300739BAD /* Sources */,
+				8CAC6B5C27ABFD4300739BAD /* Frameworks */,
+				8CAC6B5D27ABFD4300739BAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rover (macOS)";
+			packageProductDependencies = (
+				8CAC6B7A27AD5C4800739BAD /* MQTTNIO */,
+			);
+			productName = "Rover (macOS)";
+			productReference = 8CAC6B5F27ABFD4300739BAD /* Rover.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CAC6B4D27ABFD4100739BAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					8CAC6B5827ABFD4300739BAD = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					8CAC6B5E27ABFD4300739BAD = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 8CAC6B5027ABFD4100739BAD /* Build configuration list for PBXProject "Rover" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CAC6B4C27ABFD4100739BAD;
+			packageReferences = (
+				8CAC6B7627AD39F500739BAD /* XCRemoteSwiftPackageReference "mqtt-nio" */,
+			);
+			productRefGroup = 8CAC6B5A27ABFD4300739BAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CAC6B5827ABFD4300739BAD /* Rover (iOS) */,
+				8CAC6B5E27ABFD4300739BAD /* Rover (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CAC6B5727ABFD4300739BAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CAC6B6627ABFD4300739BAD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CAC6B5D27ABFD4300739BAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CAC6B6727ABFD4300739BAD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CAC6B5527ABFD4300739BAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CAC6B6427ABFD4300739BAD /* ContentView.swift in Sources */,
+				8CAC6B6227ABFD4300739BAD /* RoverApp.swift in Sources */,
+				8CAC6B7427AD38CB00739BAD /* RoverConnection.swift in Sources */,
+				8CAC6B7127AC2BEF00739BAD /* CircleImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CAC6B5B27ABFD4300739BAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CAC6B6527ABFD4300739BAD /* ContentView.swift in Sources */,
+				8CAC6B6327ABFD4300739BAD /* RoverApp.swift in Sources */,
+				8CAC6B7527AD38CB00739BAD /* RoverConnection.swift in Sources */,
+				8CAC6B7227AC2BEF00739BAD /* CircleImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8CAC6B6827ABFD4300739BAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8CAC6B6927ABFD4300739BAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		8CAC6B6B27ABFD4300739BAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BNNC5BM8J5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobile5.jw.rover.Rover;
+				PRODUCT_NAME = Rover;
+				PROVISIONING_PROFILE_SPECIFIER = "Mobile5 Wildcard Dev";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CAC6B6C27ABFD4300739BAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BNNC5BM8J5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobile5.jw.rover.Rover;
+				PRODUCT_NAME = Rover;
+				PROVISIONING_PROFILE_SPECIFIER = "Mobile5 Wildcard";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CAC6B6E27ABFD4300739BAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyd.jw.rover.Rover;
+				PRODUCT_NAME = Rover;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8CAC6B6F27ABFD4300739BAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyd.jw.rover.Rover;
+				PRODUCT_NAME = Rover;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CAC6B5027ABFD4100739BAD /* Build configuration list for PBXProject "Rover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CAC6B6827ABFD4300739BAD /* Debug */,
+				8CAC6B6927ABFD4300739BAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CAC6B6A27ABFD4300739BAD /* Build configuration list for PBXNativeTarget "Rover (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CAC6B6B27ABFD4300739BAD /* Debug */,
+				8CAC6B6C27ABFD4300739BAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CAC6B6D27ABFD4300739BAD /* Build configuration list for PBXNativeTarget "Rover (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CAC6B6E27ABFD4300739BAD /* Debug */,
+				8CAC6B6F27ABFD4300739BAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8CAC6B7627AD39F500739BAD /* XCRemoteSwiftPackageReference "mqtt-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sroebert/mqtt-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8CAC6B7727AD39F500739BAD /* MQTTNIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CAC6B7627AD39F500739BAD /* XCRemoteSwiftPackageReference "mqtt-nio" */;
+			productName = MQTTNIO;
+		};
+		8CAC6B7A27AD5C4800739BAD /* MQTTNIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CAC6B7627AD39F500739BAD /* XCRemoteSwiftPackageReference "mqtt-nio" */;
+			productName = MQTTNIO;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8CAC6B4D27ABFD4100739BAD /* Project object */;
+}
