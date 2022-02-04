@@ -26,6 +26,7 @@ def sub_cb(topic, msg):
             data = json.loads(msg)
             if "speed" in data and "turn" in data:
                 rover.set_speed(data["speed"], data["turn"])
+                notify_status()
         except ValueError as e:
             print(e)
 
@@ -43,6 +44,10 @@ def restart_and_reconnect():
     time.sleep(10)
     machine.reset()
 
+def notify_status():
+    msg = b'{"speed": %d, "turn": %d}' % (rover.speed, rover.turn)
+    client.publish(topic_pub, msg)
+
 try:
     client = connect_and_subscribe()
 
@@ -50,8 +55,7 @@ try:
         try:
             client.check_msg()
             if (time.time() - last_message) > message_interval:
-                msg = b'{"speed": %d, "turn": %d' % (rover.speed, rover.turn)
-                client.publish(topic_pub, msg)
+                notify_status()
                 last_message = time.time()
         except OSError as e:
             restart_and_reconnect()

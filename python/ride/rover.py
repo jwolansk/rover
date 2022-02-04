@@ -6,8 +6,8 @@ class Rover:
 
     def __init__(self):
         self.right = Motor(0, 5)
-        self.right.set_reversed(True)
         self.left = Motor(2, 4)
+        self.left.set_reversed(True)
         self.speed = 0
         self.turn = 0
         self.left_correction = 10
